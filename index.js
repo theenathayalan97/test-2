@@ -16,7 +16,7 @@ app.post("/test",(req,res)=>{
     
     try{
     let username = req.body.username;
-        console.log("Server Is Running")
+        console.log("Server Is Running proferly")
         res.status(200).json({"status": "server", "message": "is a", "result": username})
        
     }catch(err){
@@ -30,7 +30,7 @@ app.get("/",(req,res)=>{
     console.log("1")
     try{
         let username = req.query.username;
-        console.log("Server Is Running")
+        console.log("Server Is Running properly")
         res.status(200).json({"status": "server", "message": "is a", "result": username})
     }catch(err){
         console.log(err)
@@ -42,7 +42,7 @@ app.get("/",(req,res)=>{
 app.get("/exam/:username",(req,res)=>{
     try{
         let username = req.params.username;
-        console.log("Server Is Running")
+        console.log("Server Is Running properly")
         res.status(200).json({"status": "server", "message": "is a", "result":username})
     }catch(err){
         console.log(err)
